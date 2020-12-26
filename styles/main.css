@@ -1,0 +1,158 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    
+    font-weight: normal;
+    margin: 0%;
+    padding: 0%;
+} 
+#zmeya{
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 0;
+}
+.zmeya-container{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#score{
+    margin-top: 2%;
+    font-weight: 600;
+    font-size: 2em;
+}
+.customizer{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left:5%;
+    top:5%;
+    height: 100%;
+    width: 15%;
+    
+}
+.customizer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.c_column {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+}
+.skin{
+    margin-top: 10%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    width: 100%;
+}
+.title_column{
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+.skinImg{
+    padding: 20px;
+    object-fit: contain;
+    width: 40%;
+}
+.skin::before{
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(213,213,213);
+    visibility: hidden;
+    opacity: 0;
+}
+.skin:hover::before{
+    visibility: visible;
+    opacity: 0.2;
+    transition: 0.3s;
+}
+.clear_style{
+    font-size: 2em;
+    cursor: pointer;
+    margin-top: 10%;
+    width: 10%;
+}
+.clear_style:hover{
+    color: rgb(19, 19, 19);
+    transition: all 0.3s;
+}
+@media(max-width:1800px){
+    .customizer{
+        left: 0;
+        padding: 5%;
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+    }
+    .c_column{
+        box-sizing: border-box;
+        flex-direction: row;
+        width: 100%;
+        
+    }
+    .customizer_wrapper{
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 100%;
+    }
+    .skin{
+        margin-top: 1%;
+    }
+    .clear_style{
+        margin-top: 1%;
+    }
+    body{
+        box-sizing: border-box;  
+    }
+    .skin{
+        box-sizing: border-box;  
+    }
+    #score{
+        text-align: center;
+    }
+}
+@media(max-width:600px){
+    body{
+        font-size: 2em;
+    }
+    .zmeya-container{
+        overflow: auto;
+        text-align: center;
+    }
+    .title_column{
+        font-size: 1em;
+        width: 100%;
+    }
+    .skin{
+        width: 50%;
+    }
+    .c_column{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #score{
+        font-size: 1em;
+    }
+    .clear_style{
+        width: auto;
+        font-size: 1.4em;
+    }
+    .title_snake{
+        font-size: 1.4em;
+    }
+
+}

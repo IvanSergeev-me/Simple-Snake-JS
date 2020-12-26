@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Zmeya</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="customizer">
+		<h1 class="title_snake">
+			Customize
+		</h1>
+		<div class="customizer_wrapper">
+			<div class="c_column">
+				<h2 class="title_column">
+					Head
+				</h2>
+				<div class="skin" onclick="skinChangerHead(this)">
+					<img src="images/roflan.png" alt="roflan" class="skinImg" id="roflan">
+				</div>
+				<div class="skin" onclick="skinChangerHead(this)">
+					<img src="images/logach.jpg" alt="logach" class="skinImg" id="logach">
+				</div>
+				<div class="skin" onclick="skinChangerHead(this)">
+					<img src="images/shakal.png" alt="shakal" class="skinImg" id="shakal">
+				</div>
+				<div class="skin" onclick="skinChangerHead(this)">
+					<img src="images/snake.jpg" alt="snake" class="skinImg" id="snake">
+				</div>
+				<div class="skin" onclick="skinChangerHead(this)">
+					<img src="images/snake2.jpg" alt="snake2" class="skinImg" id="snake2">
+				</div>
+			</div>
+			<div class="c_column">
+				<h2 class="title_column">
+					Body
+				</h2>
+				<div class="skin" onclick="skinChangerBody(this)">
+					<img src="images/rect1.jpg" alt="rect1" class="skinImg" id="rect1">
+				</div>
+				<div class="skin" onclick="skinChangerBody(this)">
+					<img src="images/rect2.jpg" alt="rect2" class="skinImg" id="rect2">
+				</div>
+				<div class="skin" onclick="skinChangerBody(this)">
+					<img src="images/rect3.jpg" alt="rect3" class="skinImg" id="rect3">
+				</div>
+				<div class="skin" onclick="skinChangerBody(this)">
+					<img src="images/rect4.jpg" alt="rect4" class="skinImg" id="rect4">
+				</div>
+			</div>
+		</div>
+		<div class="clear_style" id="clear_style" onclick="clearStyle()">
+			Clear
+		</div>
+	</div>
+	<div class="zmeya-container">
+		<canvas id="zmeya"></canvas>
+		<div id="score">
+			Нажмите на стрелочки, чтобы начать играть
+		</div>
+		<div id="eaten">
+			Press any arrow key to play
+		</div>
+		
+	</div>
+	<script src="scripts/main.js"></script>
+	<!--<script src="scripts/jquery.js"></script>-->
+</body>
+</html>
